@@ -5,7 +5,10 @@ export const buildQueryString = <T>(fileName: string, object: T): string => {
     const properties = Object.entries(object)
     console.log(properties)
     properties.forEach(prop => {
-        const [key, value] = prop
+        let [key, value] = prop
+        if (typeof value == 'string') {
+            value = `"${value}"`
+        }
         query = query.replace(`@${key}`, value.toString())
     })
 
