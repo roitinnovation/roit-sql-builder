@@ -1,5 +1,5 @@
 {
-  "name": "roit-sql-builder",
+  "name": "@roit/roit-sql-builder",
   "version": "0.0.1",
   "main": "dist/index.js",
   "types": "src/index.ts",
@@ -20,5 +20,7 @@
   "dependencies": {
     "fs": "0.0.1-security"
   },
-  "keywords": []
+  "keywords": [
+    "sql", "sql-builder", "nodejs", "typescript"
+  ]
 }
