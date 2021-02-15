@@ -1,12 +1,11 @@
 {
-  "name": "roit-base-lib",
+  "name": "roit-sql-builder",
   "version": "0.0.1",
   "main": "dist/index.js",
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc --incremental -p tsconfig.build.json",
-    "deploy": "npm run build && npm test && npm publish --access public --scope=roit",
-    "test": "mocha --timeout 15000 -r ts-node/register test/**/*.spec.ts"
+    "deploy": "npm run build && npm publish --access public --scope=roit"
   },
   "author": "Author",
   "devDependencies": {
@@ -19,8 +18,7 @@
     "mocha": "^6.2.0"
   },
   "dependencies": {
-    
+    "fs": "0.0.1-security"
   },
-  "keywords": [
-  ]
+  "keywords": []
 }
