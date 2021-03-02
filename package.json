@@ -1,13 +1,13 @@
 {
   "name": "@roit/roit-sql-builder",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/index.js",
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc --incremental -p tsconfig.build.json",
     "deploy": "npm run build && npm publish --access public --scope=roit"
   },
-  "author": "ROIT INnovation",
+  "author": "ROIT Innovation",
   "repository": "github:roitinnovation/roit-sql-builder",
   "homepage": "https://github.com/roitinnovation/roit-sql-builder#readme",
   "devDependencies": {
