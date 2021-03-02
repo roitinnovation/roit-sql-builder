@@ -9,7 +9,7 @@ export const buildQueryString = <T>(fileName: string, object: T): string => {
         if (typeof value == 'string') {
             value = `'${value}'`
         }
-        query = query.replace(`@${key}`, value.toString())
+        query = query.replace(`@${key.toLowerCase()}`, value)
     })
 
     if (query.match(/@/g)) {
